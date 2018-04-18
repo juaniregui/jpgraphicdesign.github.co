@@ -1,0 +1,140 @@
+body{
+    font-family: "Dancing Script";
+    font-size:25px;
+    border-radius: 10px;
+}
+
+header{
+    line-height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color:#5b7989;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido{
+    list-style-type: none;
+}
+
+.container{
+    background-color: #5b7989;
+}
+#branding{
+    list-style-type: none;
+}
+
+.imagen-principal{
+    line-height: 20px;
+    background-color: #82c3a6;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dos-imagenes{
+    background-color:#d5c75f;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.pie-de-pagina{
+    background-color: #C6d5c5;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    flex-direction:row;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: #FFF;
+}
+
+.doble-imagen{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.enlace{
+    text-align: center;
+}
+
+header h1{
+color:#FFF;
+text-shadow: 2px 2px #02010a;
+}
+
+#img1{
+ box-shadow: 2px 2px #02010a;
+ width: 50
+
+}
+
+#img2{
+ box-shadow: 2px 2px #02010a;
+}
+
+#img3{
+ box-shadow: 2px 2px #02010a;
+}
+
+.translate{
+transform: translate(0, 0);
+transition: traslate, 1s;
+}
+.translate:hover{
+transform: translate(20px, -5px);
+animation: animantionShadow 1s;
+animation-fill-mode: forwards;
+}
+
+.rotate{
+transform: rotateZ(none);
+transition: rotatez, 1s;
+}
+
+.rotate:hover{
+transform: rotateZ(10deg);
+animation: animantionShadow 1s;
+animation-fill-mode: forwards;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+    
+.doble-imagen{
+    display: flex;
+    flex-direction:column;
+    }
+    .pie-de-pagina{
+    display: flex;
+    flex-direction:column;
+    }
+    
+#img1{
+width: 70vw;
+    }
+    
+#img2{
+width: 70vw;
+    }
+    
+#img3{
+width: 70vw;
+}    
+}
